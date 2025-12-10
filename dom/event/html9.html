@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear and stop</title>
+</head>
+<body>
+    <h1>jaadu with code</h1>
+    <button id="start" >start</button>
+    <button id ="stop">stop </button>
+    <script>
+const strt =function(){
+    document.querySelector('#start')
+    console.log("hii Annu")
+// const setdate =function(str){
+// console.log(str,Date.now());
+
+}
+const jalaj = setInterval(strt,1000 )
+document.querySelector('#start').addEventListener("click",function(){
+    setTimeout(start)
+    
+})
+//const intervalId=setInterval(setdate,9000,'hi')
+// clearInterval(intervalId)
+
+const Annu = function(){
+    document.querySelector('#stop')
+}
+
+const stop = setTimeout(Annu,5000)
+document.querySelector('#stop').addEventListener("click",function(){
+    clearTimeout(stop)
+    console.log("Stopped")
+})
+
+    </script>
+</body>
+</html>

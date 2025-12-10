@@ -1,0 +1,49 @@
+<!-- what is dom => when i lodede the html page,then brower creat document object model .
+brower create a structure of html page 
+i can access  element using the some method of document and this will change dynamically  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i learnig dom </title>
+</head>
+<body>
+       <h2 id="title">Hello DOM</h2>
+<p class="para">Learning DOM is fun!</p>
+
+<script>
+  // 1️⃣ By ID
+  const title = document.getElementById("title");
+//   console.log(title);
+
+  // 2️⃣ By Class
+  const paragraph = document.getElementsByClassName("para");
+//   console.log(paragraph[0]);
+
+  // 3️⃣ By Tag
+  const heading = document.getElementsByTagName("h2");
+//   console.log(heading[0]);
+
+  // 4️⃣ Using querySelector (CSS selector)
+  const firstPara = document.querySelector(".para");
+//   console.log(firstPara);
+</script> 
+<h1 id="myHeading">Old Heading</h1>
+<button onclick="changeHeading()">Click Me</button>
+
+<script>
+  function changeHeading() {
+    const heading = document.getElementById("myHeading");
+    heading.innerText = "Hello Anurag! 👋";      // Change text
+    heading.style.color = "blue";               // Change color
+    heading.style.fontSize = "30px";            // Change font size
+  }
+</script>
+<h1 class="Annu">hii this is new update using of dom</h1>
+<p id="dwivedi">this realy amazing </p>
+<script>
+const abhay =document.getElementById("dwivedi").innerText="this is realy boaring "    
+</script>
+</body>
+</html>

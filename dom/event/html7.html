@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+</head>
+<body style="background-color: brown;">
+ 
+
+ 
+  <h1>images</h1>
+    <div> 
+ <ul id="images">
+   <li><img  id="pigeon" src="pexels-ashuphotography-1406506.jpg" width="200" alt="photoshop" >
+ </li> 
+<li> <img  id="down" src ="pexels-daniyal-gh-10741-110812.jpg" width="200"></li> 
+ <li><img id="owl" src="pexels-nord6-792416.jpg" width="200">
+ </li> 
+  <li><img div="parrot" src="pexels-siva301in-97533.jpg" width="200">
+ </li> 
+  <li><img div="kite" src="pexels-pixabay-36846.jpg" width="200">
+ </li> 
+  <li><img div="luminar" src="pexels-pixabay-416179.jpg" width="200">
+ </li> 
+
+   <li><a href="https://www.google.com/" alt="google" id="google" style="color: aqua;"> <\<a href=""></a>
+ google 
+</li>
+</ul>   
+ </div>
+ 
+</body>
+<!-- //javascript me jitne bhi event hote vo sb sequence me h run hote hai -->
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('owl clicked')
+    //}
+// document.getElementById('images').addEventListener('click',function(e){
+//     console.log('clicked inside the ul');
+// },true)
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log('owl clicked ');
+//     e.stopPropagation()
+// },false)
+// document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault()
+//     e.stopPropagation()
+//        console.log('google clicked ');
+// },false)
+
+//attachEvent
+//jquery-on
+//type , timestamp, defaultPrevented
+//target, toElement, srcElement, currentTarget
+//clientX, Cliety , screen x, screeny
+//alt, ctrkey,shiftkey, keycode
+//  capture going to top to bottm 
+document.querySelector('#images').addEventListener('click', function(e){
+console.log(e.target.parentNode);
+if(e.target.tagName==='IMG'){
+  console.log(e.target.id);
+let removeIt =e.target.parentNode
+ removeIt.remove() 
+}
+// removeIt.parentNode.removeChild(removeIt)                                                                                                                         
+},false)
+// the change in the state of an object is known as an event
+// events are fired to notify code of 'interesting changes ' that may affect code execution.addEventListener
+// .mouse events (keypress,keyup,keydown)
+// .from events(sbmit etc.)
+// .print event & many more 
+</script>
+
+</html>

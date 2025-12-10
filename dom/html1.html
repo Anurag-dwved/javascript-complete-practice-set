@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dom</title>
+        <style>.bg-black{
+            background-color: rgb(221, 201, 202);
+            color:hsl(0, 4%, 27%)
+        }
+        </style>
+    </head>
+    <body class="bg-black">
+        <div> 
+            <h1 id= "title" class = "heading">Dom learning <span style="display: none">test text</span></h1>
+            <p> lorem ispus dolor sit amet.</p>
+        </div>
+        <script>
+        const a = document.getElementById("title") ;
+        console.log(title); // ✅ Should show the h1 element now
+        console.log(title.id); // ✅ Output: title
+       console.log( title.innerText)
+        title.textContent
+        console.log(title)
+    </script>
+    <ul>
+        <li>kakkan <br> japan </li>
+        <li>modi</li>
+        <li>japan</li>
+
+    </ul>
+    <!-- 🧩 2. Accessing Elements (Selecting Nodes)
+JavaScript provides several ways to select elements from the DOM. -->
+<h2 id="title">Hello DOM</h2>
+<p class="para">Learning DOM is fun!</p>
+
+<script>
+  // 1️⃣ By ID
+  const title = document.getElementById("title");
+  console.log(title);
+
+  // 2️⃣ By Class
+  const paragraph = document.getElementsByClassName("para");
+  console.log(paragraph[0]);
+
+  // 3️⃣ By Tag
+  const heading = document.getElementsByTagName("h2");
+  console.log(heading[0]);
+
+  // 4️⃣ Using querySelector (CSS selector)
+  const firstPara = document.querySelector(".para");
+  console.log(firstPara);
+</script>
+<script>
+   const annu = document.querySelector('ul')
+   annu.style.backgroundColor='red'
+
+</script>
+    </body>
+    </html>

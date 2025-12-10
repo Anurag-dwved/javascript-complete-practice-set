@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom6</title>
+
+</head>
+<body style = "background-color: antiquewhite;">
+    <ul class="language" style = "color: rgb(241, 8, 8);"> 
+     <li>python</li>   
+      <li>cpp</li>
+       <li>C#</li>
+       <!-- <ul> basics<li> op</li>
+     <li>linux</li> 
+     <li>database</li>   </ul>     -->
+    </ul>
+    <script>
+     function   addLanguage(langName){
+       const li =  document.createElement('li');
+       li.innerHTML = `${langName}`
+       document.querySelector('.language').appendChild(li)
+
+     } 
+     addLanguage("namak haram javascript")
+     addLanguage( "type script")
+     function addOPtiLangauge(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+     }
+     addOPtiLangauge("ruby")
+     //Edit
+     const secondLng = document.querySelector("li:nth-child(2)");
+    secondLng.innerHTML= "mongo"
+    const secondLang = document.querySelector("li:first-child")
+    secondLang.outerHTML='<li>TypeScript</li>'
+//remove
+const lastLang = document.querySelector('li:last-child')
+
+lastLang.remove()
+
+    </script>
+</body>
+</html>

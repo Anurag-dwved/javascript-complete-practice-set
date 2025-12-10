@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time stamp </title>
+  </head>
+<body>
+     <h1>Anurag And Arjun</h1> 
+<button id="Stop">Stop</button>
+<script>
+//setTimeout()this is a method this called the API  
+// setTimeout(function(){
+//     console.log("hii Anurag")
+// },2000)
+
+// const sayAnurag = function(){
+//     console.log("Hitesh");
+// }
+// setTimeout(sayAnurag,3000)
+
+const annu = function(){
+    document.querySelector('h1').
+    innerHTML = "Absolutely this is best Javascript series "
+}
+const stop = setTimeout(annu,5000)
+document.querySelector('#Stop').addEventListener("click",function(){
+    clearTimeout(stop)
+    console.log("Stopped")
+})
+</script>
+</body>
+</html
